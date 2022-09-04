@@ -1,6 +1,6 @@
-package src.threedimensionalshape;
+package prj.coreyduffy.threedimensionalshape;
 
-class RegularTetrahedron extends ThreeDimensionalShape {
+class RegularTetrahedron extends AbstractThreeDimensionalShape {
     private final int edge;
 
     public RegularTetrahedron(int edge) {

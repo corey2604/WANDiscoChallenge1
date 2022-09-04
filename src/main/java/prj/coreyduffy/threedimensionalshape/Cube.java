@@ -1,6 +1,6 @@
-package src.threedimensionalshape;
+package prj.coreyduffy.threedimensionalshape;
 
-class Cube extends ThreeDimensionalShape {
+class Cube extends AbstractThreeDimensionalShape {
 
     private final int width;
 

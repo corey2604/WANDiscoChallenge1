@@ -1,4 +1,4 @@
-package src.threedimensionalshape;
+package prj.coreyduffy.threedimensionalshape;
 
 public class ThreeDimensionalShapeFactory {
 
@@ -26,7 +26,7 @@ public class ThreeDimensionalShapeFactory {
             case REGULAR_TETRAHEDRON:
                 return new RegularTetrahedron(sideMeasurement);
             default:
-                throw new IllegalArgumentException("Unknown three dimensional shape type: " + threeDimensionalShapeType);
+                throw new UnsupportedOperationException("Unsupported three dimensional shape type: " + threeDimensionalShapeType);
         }
     }
 }

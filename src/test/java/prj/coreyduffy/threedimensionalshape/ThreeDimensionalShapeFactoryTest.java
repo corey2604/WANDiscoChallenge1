@@ -1,9 +1,9 @@
-package src.threedimensionalshape;
+package prj.coreyduffy.threedimensionalshape;
 
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 import static org.junit.jupiter.api.Assertions.assertNull;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class ThreeDimensionalShapeFactoryTest {
     ThreeDimensionalShapeFactory threeDimensionalShapeFactory = ThreeDimensionalShapeFactory.getInstance();
@@ -14,7 +14,7 @@ class ThreeDimensionalShapeFactoryTest {
         ThreeDimensionalShape result = threeDimensionalShapeFactory.createThreeDimensionalShape(ThreeDimensionalShapeType.SPHERE, 1);
 
         // Then
-        assertTrue(result instanceof Sphere);
+        assertInstanceOf(Sphere.class, result);
     }
 
     @Test
@@ -23,7 +23,7 @@ class ThreeDimensionalShapeFactoryTest {
         ThreeDimensionalShape result = threeDimensionalShapeFactory.createThreeDimensionalShape(ThreeDimensionalShapeType.CUBE, 1);
 
         // Then
-        assertTrue(result instanceof Cube);
+        assertInstanceOf(Cube.class, result);
     }
 
     @Test
@@ -32,7 +32,7 @@ class ThreeDimensionalShapeFactoryTest {
         ThreeDimensionalShape result = threeDimensionalShapeFactory.createThreeDimensionalShape(ThreeDimensionalShapeType.REGULAR_TETRAHEDRON, 1);
 
         // Then
-        assertTrue(result instanceof RegularTetrahedron);
+        assertInstanceOf(RegularTetrahedron.class, result);
     }
 
     @Test

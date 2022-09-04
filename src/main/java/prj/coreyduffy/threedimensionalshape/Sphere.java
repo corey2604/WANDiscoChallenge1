@@ -1,6 +1,6 @@
-package src.threedimensionalshape;
+package prj.coreyduffy.threedimensionalshape;
 
-class Sphere extends ThreeDimensionalShape {
+class Sphere extends AbstractThreeDimensionalShape {
     private final int radius;
 
     public Sphere(int radius) {

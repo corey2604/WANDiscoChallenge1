@@ -1,4 +1,4 @@
-package src.threedimensionalshape;
+package prj.coreyduffy.threedimensionalshape;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -7,25 +7,25 @@ import org.junit.jupiter.params.provider.CsvSource;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-class CubeTest {
+class SphereTest {
     @Test
-    void testCubeWithNegativeRadiusThrowsException() {
+    void testSphereWithNegativeRadiusThrowsException() {
         // When - Then
-        assertThrows(IllegalArgumentException.class, () -> new Cube(-1));
+        assertThrows(IllegalArgumentException.class, () -> new Sphere(-1));
     }
 
     @ParameterizedTest
     @CsvSource({
-            "1, 1",
-            "5, 125",
+            "1, 4.19",
+            "5, 523.6",
             "0, 0",
     })
-    void testGetVolumeWhenWidthIs1(int width, double volume) {
+    void testGetVolume(int radius, double volume) {
         // Given
-        Cube cube = new Cube(width);
+        Sphere sphere = new Sphere(radius);
 
         // When
-        double result = cube.getVolume();
+        double result = sphere.getVolume();
 
         // Then
         assertEquals(volume, result);

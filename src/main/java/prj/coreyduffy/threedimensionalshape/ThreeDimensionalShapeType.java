@@ -1,4 +1,4 @@
-package src.threedimensionalshape;
+package prj.coreyduffy.threedimensionalshape;
 
 public enum ThreeDimensionalShapeType {
     SPHERE,
